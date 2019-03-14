@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 import '../../device-mockups/device-mockups.css'
-import demoScreen1 from '../../demo-screen-1.jpg';
 
-export const HeroComponent = (props)=>{
+export const HeroComponent = (props) => {
   return <header className="masthead">
     <div className="container h-100">
       <div className="row h-100">
         <div className="my-auto">
           <div className="header-content mx-auto">
-            <h1 className="mb-5">Welcome to Star Tool Engineering</h1>
-            <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            <h1 className="mb-5 w3-animate-top">Where passion drives performance.</h1>
+            <div className="w3-container w3-center w3-animate-bottom">
+              <p>Welcome to <span className="ste-text">Star Tool Engineering</span>. Proudly in business for 20+ years, we strive to provide quality machined parts and on-time delivery.</p>
+            </div>
+            <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Learn more</a>
           </div>
         </div>
         {/* <div className="col-lg-5 my-auto">

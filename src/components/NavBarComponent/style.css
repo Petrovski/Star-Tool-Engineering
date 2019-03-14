@@ -9,20 +9,23 @@
     letter-spacing: 1px; 
   }
 
+  .navbar-brand {
+    margin-right: 0px;
+  }
+
   #mainNav .navbar-brand {
-    color: white;
     font-family: 'Muli';
     font-weight: 200;
     letter-spacing: 1px; 
   }
 
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-    color: #fcbd20; 
+    color: blue; 
   }
 
   #mainNav .navbar-toggler {
-    font-size: 12px;
-    padding: 8px 10px;
+    font-size: 18px;
+    padding: 12px 16px;
     color: #222222; 
   }
 
@@ -37,7 +40,9 @@
     color: black !important;
     background-color: transparent;
     font-weight: bold;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
+    width: 95%;
+    margin: auto;
   }
 
   #mainNav .navbar-nav > li > a.active:hover {
@@ -51,7 +56,8 @@
 
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
-    color: #fdcc52; 
+    color: blueviolet; 
+    cursor: pointer;
   }
 
   @media (min-width: 992px) {
@@ -61,6 +67,7 @@
     }
 
     #mainNav .navbar-brand {
+      color: white;
       color: fade(white, 70%); 
     }
     
@@ -90,7 +97,7 @@
     }
           
     #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-      color: #fdcc52; 
+      color: #529ffd; 
     }
         
     #mainNav.navbar-shrink .navbar-nav > li > a,
@@ -102,9 +109,16 @@
     #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
       color: black;
       font-weight: bold;
-      border-bottom: 3px solid black; } 
+      border-bottom: 1px solid black;
+      width: 95%;
+      margin: auto;
+     } 
   }
 
   .navbar-light .navbar-brand {
     color: black;
+  }
+
+  .fa-bars {
+    margin-left: 0.5rem;
   }
