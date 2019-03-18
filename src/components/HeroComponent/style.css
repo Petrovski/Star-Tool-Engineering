@@ -24,6 +24,7 @@ header.masthead {
   header.masthead .device-container .screen img {
       border-radius: 3px; 
   }
+  
   @media (min-width: 992px) {
 
     header.masthead {
@@ -36,7 +37,7 @@ header.masthead {
       margin-bottom: 0; 
     }
     header.masthead .header-content h1 {
-      font-size: 65px; 
+      font-size: 75px; 
     }
     header.masthead .device-container {
       max-width: 325px; 
@@ -49,7 +50,33 @@ header.masthead {
     margin-right: auto;
   }
 
+  .welcome-ste {
+    margin-top: 3rem;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+  }
+
   .ste-text {
     text-decoration: underline;
     font-weight: bold;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+
+  #ste-learn {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  #ste-learn:hover {
+    background: white;
+    color: black;
+    border: 1.5px solid black;
+    letter-spacing: 6px;
   }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 import demoScreen1 from '../../demo-screen-1.jpg';
@@ -7,9 +7,9 @@ export const FeaturesComponent = (props)=>{
   return <section className="features" id="features">
     <div className="container">
       <div className="section-heading text-center">
-        <h2>Unlimited Features, Unlimited Fun</h2>
-        <p className="text-muted">Check out what you can do with this app theme!</p>
-        <hr />
+        <h2>Unmatched Services</h2>
+        <hr id="services-hr"/>
+        {/* <p className="text-muted">Check out what you can do with this app theme!</p> */}
       </div>
       <div className="row">
         <div className="col-lg-4 my-auto">
@@ -31,15 +31,15 @@ export const FeaturesComponent = (props)=>{
               <div className="col-lg-6">
                 <div className="feature-item">
                   <i className="icon-screen-smartphone text-primary"></i>
-                  <h3>Device Mockups</h3>
-                  <p className="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                  <h3>CNC Machining</h3>
+                  <p className="text-muted">-- CNC Machining text here --</p>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="feature-item">
                   <i className="icon-camera text-primary"></i>
-                  <h3>Flexible Use</h3>
-                  <p className="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                  <h3>Milling</h3>
+                  <p className="text-muted">-- Milling text here --</p>
                 </div>
               </div>
             </div>
@@ -47,15 +47,15 @@ export const FeaturesComponent = (props)=>{
               <div className="col-lg-6">
                 <div className="feature-item">
                   <i className="icon-present text-primary"></i>
-                  <h3>Free to Use</h3>
-                  <p className="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                  <h3>Turning</h3>
+                  <p className="text-muted">-- Turning Machining text here --</p>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="feature-item">
                   <i className="icon-lock-open text-primary"></i>
-                  <h3>Open Source</h3>
-                  <p className="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                  <h3>Wire EDM</h3>
+                  <p className="text-muted">-- Wire EDM Machining text here --</p>
                 </div>
               </div>
             </div>
