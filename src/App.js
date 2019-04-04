@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.css';
 import {FooterComponent}  from './components/FooterComponent/FooterComponent';
 import {SocialComponent} from './components/SocialComponent/SocialComponent';
 import {CallToActionComponent} from './components/CallToActionComponent/CallToActionComponent';
-import {FeaturesComponent} from './components/FeaturesComponent/FeaturesComponent';
+import {ServicesComponent} from './components/ServicesComponent/ServicesComponent';
 import {AppDownloadComponent} from './components/AppDownloadComponent/AppDownloadComponent';
 import {HeroComponent} from './components/HeroComponent/HeroComponent';
 import NavBarComponent from './components/NavBarComponent/NavBarComponent';
@@ -42,7 +42,7 @@ class App extends Component {
         <NavBarComponent navBarShrink = {nbs} />
         <HeroComponent />
         <AppDownloadComponent />
-        <FeaturesComponent />
+        <ServicesComponent />
         <CallToActionComponent />
         <SocialComponent />
         <FooterComponent />

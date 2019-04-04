@@ -5,15 +5,15 @@ import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
 import { HeroComponent } from '../HeroComponent/HeroComponent';
 
 
-class NavBarComponent extends Component{
-  constructor(props){
+class NavBarComponent extends Component {
+  constructor(props) {
     super(props);
     this.state = {mnuShow:false};
     this.closeMnu = this.closeMnu.bind(this);
   }
 
   componentDidMount() {
-    Events.scrollEvent.register('begin', ()=> {
+    Events.scrollEvent.register('begin', () => {
       console.log("begin", arguments);
       this.closeMnu();
     });
@@ -29,11 +29,11 @@ class NavBarComponent extends Component{
     Events.scrollEvent.remove('end');
   }
 
-  toggleShow(){
+  toggleShow() {
     this.setState({mnuShow:!this.state.mnuShow});
   }
 
-  closeMnu(){
+  closeMnu() {
     if(this.state.mnuShow){
       this.setState({mnuShow:false});
     }
@@ -43,7 +43,7 @@ class NavBarComponent extends Component{
     scroll.scrollToTop();
   }
 
-  render(){
+  render() {
     const show = this.state.mnuShow ? "show" : "";
     return (
       <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${this.props.navBarShrink}`} id="mainNav">
@@ -75,4 +75,5 @@ class NavBarComponent extends Component{
     );
   }
 }
+
 export default NavBarComponent;
