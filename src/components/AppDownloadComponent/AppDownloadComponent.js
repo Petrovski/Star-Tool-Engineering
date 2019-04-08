@@ -14,10 +14,6 @@ import './style.css';
               Our app is available on any mobile device! Download now to get
               started!
             </p>
-            <div className="badges">
-              <a className="badge-link" href="#" />
-              <a className="badge-link" href="#" />
-            </div>
           </div>
         </div>
       </div>

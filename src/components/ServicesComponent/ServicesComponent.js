@@ -31,39 +31,41 @@ export const ServicesComponent = (props) =>{
           <div className="col-lg-10 my-auto">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6" id="cnc-machining-box">
                   <div className="feature-item">
                     <i className="icon-screen-smartphone text-primary" />
-                    <h3 className="services-h3">CNC Machining</h3>
-                    <p className="text-muted">
-                      -- CNC Machining text here --
+                    <h3 className="services-h3">CNC</h3>
+                    <p className="services-info-text" id="services-text-id">
+                      -- CNC text here --
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item">
+                  <div className="feature-item" id="milling-box">
                     <i className="icon-camera text-primary" />
                     <h3 className="services-h3">Milling</h3>
-                    <p className="text-muted">-- Milling text here --</p>
+                    <p className="services-info-text" id="services-text-id">
+                      -- Milling text here --
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="feature-item">
+                  <div className="feature-item" id="turning-box">
                     <i className="icon-present text-primary" />
                     <h3 className="services-h3">Turning</h3>
-                    <p className="text-muted">
+                    <p className="services-info-text" id="services-text-id">
                       -- Turning Machining text here --
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item">
+                  <div className="feature-item" id="prototype-box">
                     <i className="icon-lock-open text-primary" />
-                    <h3 className="services-h3">Wire EDM</h3>
-                    <p className="text-muted">
-                      -- Wire EDM Machining text here --
+                    <h3 className="services-h3">Prototype</h3>
+                    <p className="services-info-text" id="services-text-id">
+                      -- Protoype text here --
                     </p>
                   </div>
                 </div>

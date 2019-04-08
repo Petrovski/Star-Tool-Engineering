@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import * as Scroll from 'react-scroll';
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
-import { HeroComponent } from '../HeroComponent/HeroComponent';
 
 
 class NavBarComponent extends Component {
@@ -62,7 +60,7 @@ class NavBarComponent extends Component {
                 <Link activeClass="active" className="nav-link js-scroll-trigger" to="features" spy={true} smooth="easeInOutQuart" duration={1000} >Services</Link>
               </li>
               <li className="nav-item">
-                <Link activeClass="active" className="nav-link js-scroll-trigger" to="overlay" spy={true} smooth="easeInOutQuart" duration={1000} >Products</Link>
+                <Link activeClass="active" className="nav-link js-scroll-trigger" to="cta" spy={true} smooth="easeInOutQuart" duration={1000} >Products</Link>
               </li>
               <li className="nav-item">
                 <Link activeClass="active" className="nav-link js-scroll-trigger" to="contact" spy={true} smooth="easeInOutQuart" duration={1000} >Contact</Link>
