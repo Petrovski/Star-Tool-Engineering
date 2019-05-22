@@ -2,7 +2,7 @@
   "name": "newage-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://petrovski.github.io/Star-Tool-Engineering",
+  "homepage": "https://petrovski.github.io/Star-Tool-Engineering/",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.0.1",
