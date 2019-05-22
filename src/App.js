@@ -14,13 +14,13 @@ import NavBarComponent from './components/NavBarComponent/NavBarComponent';
 
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={navBarShrink:""};
+    this.state = {navBarShrink:""};
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll();
   }
@@ -29,7 +29,7 @@ class App extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll(event){
+  handleScroll(event) {
     const domNode = ReactDOM.findDOMNode(this.navEl);
     const nbs = window.pageYOffset>100 ? "navbar-shrink" : "";
     this.setState({navBarShrink:nbs});

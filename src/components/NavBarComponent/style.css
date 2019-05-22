@@ -19,7 +19,7 @@
     letter-spacing: 1px; 
   }
 
-    #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: rgb(98, 126, 241); 
   }
 
@@ -41,7 +41,6 @@
     background-color: transparent;
     font-weight: bold;
     margin: auto;
-    /* text-decoration: underline; */
   }
 
   #mainNav .navbar-nav > li > a.active:hover {
