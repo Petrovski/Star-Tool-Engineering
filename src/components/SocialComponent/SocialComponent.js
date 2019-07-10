@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 
-export const SocialComponent = (props)=>{
+export const SocialComponent = (props) => {
   return <section className="contact bg-primary" id="contact">
     <div className="container">
       <h2>We

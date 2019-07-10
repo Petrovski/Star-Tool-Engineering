@@ -26,12 +26,22 @@ section.features .device-container {
     }
 
 section.features .feature-item {
+    filter: brightness(50%);
+    z-index: 0;
+    transition: box-shadow .4s;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center; 
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  section.features .feature-item:hover {
+    /* border-radius: 5px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.99);
   }
   
 section.features .feature-item h3 {
+    filter: brightness(100%);
     font-size: 40px; 
   }
     
@@ -62,38 +72,39 @@ section.features .feature-item i {
   }
 
   .col-lg-6 {
-    transition: .7s;
-    -webkit-transition: .7s;
+    transition: .4s;
+    -webkit-transition: .4s;
     /* padding: 30px; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
   .col-lg-6:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   #cnc-machining-box {
-    filter: brightness(50%);
     background-size: cover;
     background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
   }
 
   #milling-box {
-    filter: brightness(30%);
     background-size: cover;
     background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
   }
 
   #turning-box {
-    filter: brightness(30%);
     background-size: cover;
     background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
   }
 
   #prototype-box {
-    filter: brightness(30%);
     background-size: cover;
     background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
   }
+
   
+
+  .services-button-hide {
+    display: none;
+  }

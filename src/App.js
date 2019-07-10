@@ -16,7 +16,9 @@ import NavBarComponent from './components/NavBarComponent/NavBarComponent';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {navBarShrink:""};
+    this.state = { 
+      navBarShrink:""
+    };
     this.handleScroll = this.handleScroll.bind(this);
   }
 

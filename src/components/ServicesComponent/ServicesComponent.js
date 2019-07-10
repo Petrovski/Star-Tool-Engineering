@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Modal from './Modal/Modal';
+import useModal from './Modal/useModal';
 import './style.css';
 import 'simple-line-icons/css/simple-line-icons.css';
-// import demoScreen1 from '../../demo-screen-1.jpg';
 
-export const ServicesComponent = (props) =>{
+export const ServicesComponent = (props) => {
+
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(!hovered);
+
+  const {isShowing, toggle} = useModal();
+
+
   return (
     <section className="features" id="features">
       <div className="container">
@@ -15,61 +23,69 @@ export const ServicesComponent = (props) =>{
           </p>
         </div>
         <div className="row">
-          {/* <div className="col-lg-4 my-auto">
-          <div className="device-container">
-            <div className="device-mockup iphone6_plus portrait white">
-              <div className="device">
-                <div className="screen">
-                  <img src={demoScreen1} className="img-fluid" alt="" />
-                </div>
-                <div className="button">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
           <div className="col-lg-10 my-auto">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-6" id="cnc-machining-box">
-                  <div className="feature-item">
+                <div className="col-lg-6">
+                  <div className="feature-item" id="cnc-machining-box" onClick={toggle} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                     <i className="icon-screen-smartphone text-primary" />
                     <h3 className="services-h3">CNC</h3>
-                    <p className="services-info-text" id="services-text-id">
-                      -- CNC text here --
-                    </p>
+                    <button 
+                      className={hovered ? '' : 'services-button-hide'}
+                    >
+                        Learn More
+                    </button>
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item" id="milling-box">
+                  <div className="feature-item" id="milling-box" onClick={toggle} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                     <i className="icon-camera text-primary" />
                     <h3 className="services-h3">Milling</h3>
                     <p className="services-info-text" id="services-text-id">
-                      -- Milling text here --
+                      <button
+                        className={hovered ? 'pulse animated' : ''}
+                        onMouseEnter={toggleHover}
+                        onMouseLeave={toggleHover}
+                      >
+                        Learn More
+                    </button>
                     </p>
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="feature-item" id="turning-box">
+                  <div className="feature-item" id="turning-box" onClick={toggle}>
                     <i className="icon-present text-primary" />
                     <h3 className="services-h3">Turning</h3>
                     <p className="services-info-text" id="services-text-id">
-                      -- Turning Machining text here --
+                      <button
+                        className={hovered ? 'pulse animated' : ''}
+                        onMouseEnter={toggleHover}
+                        onMouseLeave={toggleHover}
+                      >
+                        Learn More
+                    </button>
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item" id="prototype-box">
+                  <div className="feature-item" id="prototype-box" onClick={toggle}>
                     <i className="icon-lock-open text-primary" />
                     <h3 className="services-h3">Prototype</h3>
                     <p className="services-info-text" id="services-text-id">
-                      -- Protoype text here --
+                      <button
+                        className={hovered ? 'pulse animated' : ''}
+                        onMouseEnter={toggleHover}
+                        onMouseLeave={toggleHover}
+                      >
+                        Learn More
+                    </button>
                     </p>
                   </div>
                 </div>
               </div>
+              <Modal isShowing={isShowing} hide={toggle} />
             </div>
           </div>
         </div>
