@@ -11,7 +11,7 @@ export const ServicesComponent = (props) =>{
           <h2 className="unmatched-services">Unmatched Services</h2>
           <hr id="services-hr" />
           <p className="text-muted">
-            Check out what you can do with this app theme!
+            Please see below for our primary services offered. We offer much more than this.
           </p>
         </div>
         <div className="row">
