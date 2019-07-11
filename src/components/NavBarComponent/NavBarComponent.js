@@ -54,7 +54,7 @@ class NavBarComponent extends Component {
           <div className={`collapse navbar-collapse ${show}`} id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link activeClass="active" className="nav-link js-scroll-trigger" to="download" spy={true} smooth="easeInOutQuart" duration={1000} >About</Link>
+                <Link activeClass="active" className="nav-link js-scroll-trigger" to="about" spy={true} smooth="easeInOutQuart" duration={1000} >About</Link>
               </li>
               <li className="nav-item">
                 <Link activeClass="active" className="nav-link js-scroll-trigger" to="features" spy={true} smooth="easeInOutQuart" duration={1000} >Services</Link>
@@ -67,7 +67,6 @@ class NavBarComponent extends Component {
               </li>
             </ul>
           </div>
-          {/* <Route exact path="/" component={HeroComponent} /> */}
         </div>
       </nav>
     );

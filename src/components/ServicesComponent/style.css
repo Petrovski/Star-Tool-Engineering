@@ -26,23 +26,29 @@ section.features .device-container {
     }
 
 section.features .feature-item {
-    filter: brightness(50%);
+    -moz-box-shadow:    inset 0 0 300px #000000;
+    -webkit-box-shadow: inset 0 0 300px #000000;
+    box-shadow:         inset 0 0 300px #000000;
     z-index: 0;
     transition: box-shadow .4s;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 4px;
+    transition: 0.5s;
   }
 
   section.features .feature-item:hover {
-    /* border-radius: 5px; */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow:    inset 0 0 50px #000000;
+    -webkit-box-shadow: inset 0 0 50px #000000;
+    box-shadow:         inset 0 0 50px #000000;
+    transition: 0.5s;
   }
   
 section.features .feature-item h3 {
-    filter: brightness(100%);
-    font-size: 40px; 
+    font-size: 70px;
+    text-shadow: -1px 3px 10px #000000;
+    margin: 50px 0px 50px 0px;
   }
     
 section.features .feature-item i {
@@ -57,14 +63,12 @@ section.features .feature-item i {
   
   .services-h3 {
     color: white;
-  }
-
-  #services-text-id {
-    filter: brightness(100%);
+    font-family: 'Muli';
   }
 
   .services-info-text {
     color: white;
+    margin: 20px;
   }
 
   .unmatched-services {
@@ -72,8 +76,8 @@ section.features .feature-item i {
   }
 
   .col-lg-6 {
-    transition: .4s;
-    -webkit-transition: .4s;
+    transition: .5s;
+    -webkit-transition: .5s;
     /* padding: 30px; */
     margin-top: 15px;
     margin-bottom: 15px;
@@ -85,26 +89,32 @@ section.features .feature-item i {
 
   #cnc-machining-box {
     background-size: cover;
-    background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
+    background-image: url('https://inteng-storage.s3.amazonaws.com/images/sizes/cnc_machine_best_resize_md.jpg');
   }
 
   #milling-box {
     background-size: cover;
-    background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
+    background-image: url('https://i.all3dp.com/wp-content/uploads/2019/01/10153218/a-sweet-cut-into-metal-secotoolscom-190110.jpg');
   }
 
   #turning-box {
     background-size: cover;
-    background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
+    background-image: url('https://mazakfiles.blob.core.windows.net/web-site/image/4072d31d03a54d1eb8cac6b8c8b9b39e/12_HQR_s4_1.jpg');
   }
 
   #prototype-box {
     background-size: cover;
-    background-image: url('https://qph.fs.quoracdn.net/main-qimg-3df6a1473b7a1e8137c7972be68801e8');
+    background-image: url('https://www.waykenrm.com/wp-content/uploads/2018/07/01-feature.jpg');
   }
 
-  
-
   .services-button-hide {
-    display: none;
+    visibility: hidden;
+  }
+
+  .service-button-show {
+    transition: 1s;
+  }
+
+  .service-button-show:hover {
+    font-size: 50px;
   }

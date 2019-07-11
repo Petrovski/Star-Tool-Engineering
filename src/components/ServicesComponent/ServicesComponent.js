@@ -6,8 +6,14 @@ import 'simple-line-icons/css/simple-line-icons.css';
 
 export const ServicesComponent = (props) => {
 
-  const [hovered, setHovered] = useState(false);
-  const toggleHover = () => setHovered(!hovered);
+  const [hoveredOne, setHoveredOne] = useState(false);
+  const [hoveredTwo, setHoveredTwo] = useState(false);
+  const [hoveredThree, setHoveredThree] = useState(false);
+  const [hoveredFour, setHoveredFour] = useState(false);
+  const toggleHoverOne = () => setHoveredOne(!hoveredOne);
+  const toggleHoverTwo = () => setHoveredTwo(!hoveredTwo);
+  const toggleHoverThree = () => setHoveredThree(!hoveredThree);
+  const toggleHoverFour = () => setHoveredFour(!hoveredFour);
 
   const {isShowing, toggle} = useModal();
 
@@ -27,61 +33,53 @@ export const ServicesComponent = (props) => {
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="feature-item" id="cnc-machining-box" onClick={toggle} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-                    <i className="icon-screen-smartphone text-primary" />
+                  <div className="feature-item" id="cnc-machining-box" onClick={toggle} onMouseEnter={toggleHoverOne} onMouseLeave={toggleHoverOne}>
                     <h3 className="services-h3">CNC</h3>
+                    {/* <p className="services-info-text" id="services-text-id">
                     <button 
-                      className={hovered ? '' : 'services-button-hide'}
+                      className={hoveredOne ? '' : 'services-button-hide'}
                     >
                         Learn More
                     </button>
+                    </p> */}
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item" id="milling-box" onClick={toggle} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-                    <i className="icon-camera text-primary" />
+                  <div className="feature-item" id="milling-box" onClick={toggle} onMouseEnter={toggleHoverTwo} onMouseLeave={toggleHoverTwo}>
                     <h3 className="services-h3">Milling</h3>
-                    <p className="services-info-text" id="services-text-id">
+                    {/* <p className="services-info-text" id="services-text-id">
                       <button
-                        className={hovered ? 'pulse animated' : ''}
-                        onMouseEnter={toggleHover}
-                        onMouseLeave={toggleHover}
+                        className={hoveredTwo ? '' : 'services-button-hide'}
                       >
                         Learn More
                     </button>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="feature-item" id="turning-box" onClick={toggle}>
-                    <i className="icon-present text-primary" />
+                  <div className="feature-item" id="turning-box" onClick={toggle} onMouseEnter={toggleHoverThree} onMouseLeave={toggleHoverThree}>
                     <h3 className="services-h3">Turning</h3>
-                    <p className="services-info-text" id="services-text-id">
+                    {/* <p className="services-info-text" id="services-text-id">
                       <button
-                        className={hovered ? 'pulse animated' : ''}
-                        onMouseEnter={toggleHover}
-                        onMouseLeave={toggleHover}
+                        className={hoveredThree ? '' : 'services-button-hide'}
                       >
                         Learn More
                     </button>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="feature-item" id="prototype-box" onClick={toggle}>
-                    <i className="icon-lock-open text-primary" />
+                  <div className="feature-item" id="prototype-box" onClick={toggle} onMouseEnter={toggleHoverFour} onMouseLeave={toggleHoverFour}>
                     <h3 className="services-h3">Prototype</h3>
-                    <p className="services-info-text" id="services-text-id">
+                    {/* <p className="services-info-text" id="services-text-id">
                       <button
-                        className={hovered ? 'pulse animated' : ''}
-                        onMouseEnter={toggleHover}
-                        onMouseLeave={toggleHover}
+                        className={hoveredFour ? 'services-button-show' : 'services-button-hide'}
                       >
                         Learn More
                     </button>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
