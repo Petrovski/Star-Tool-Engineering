@@ -29,7 +29,7 @@ export const ServicesComponent = (props) => {
           </p>
         </div>
         <div className="row">
-          <div className="col-lg-10 my-auto">
+          <div className="col-lg-12 my-auto">
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6">
