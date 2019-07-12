@@ -47,25 +47,14 @@ section.features .feature-item {
     -moz-box-shadow:    inset 0 0 50px #000000;
     -webkit-box-shadow: inset 0 0 50px #000000;
     box-shadow:         inset 0 0 50px #000000;
-    transition: 0.3s;
     cursor: pointer;
-    animation: shadow-pulse 2s infinite;
+    /* animation: shadow-pulse 2s infinite; */
   }
   
 section.features .feature-item h3 {
     font-size: 70px;
     text-shadow: -1px 3px 10px #000000;
     margin: 50px 0px 50px 0px;
-  }
-    
-section.features .feature-item i {
-    font-size: 80px;
-    display: block;
-    margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #000000, #249fdc);
-    background: linear-gradient(to left, #000000, #249fdc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
   }
   
   .services-h3 {
@@ -118,7 +107,7 @@ section.features .feature-item i {
     background-image: url('https://www.waykenrm.com/wp-content/uploads/2018/07/01-feature.jpg');
   }
 
-  @keyframes shadow-pulse
+  /* @keyframes shadow-pulse
 {
      0% {
           box-shadow: 0 0 0 0px rgb(32, 105, 138);
@@ -126,4 +115,4 @@ section.features .feature-item i {
      100% {
           box-shadow: 0 0 0 8px rgba(23, 139, 193, 0);
      }
-}
+} */
