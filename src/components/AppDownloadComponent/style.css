@@ -20,6 +20,12 @@
   section.download .badges .badge-link img {
     height: 60px; 
   }
+
+  .about-us {
+    font-size: 5rem;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 400;
+  }
     
   @media (min-width: 768px) {
       section.download .badges .badge-link {
@@ -33,3 +39,31 @@
       font-size: 70px; 
       } 
     }
+
+  /* slider */
+
+  .slick-dots {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    margin: 2px;
+  }
+
+  .slick-dots li.slick-active button {
+    background: #fff;
+    width: 25px;
+  }
+
+  .slick-dots li button {
+    height: 6px;
+    width: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .2s ease;
+    border: 0;
+  }

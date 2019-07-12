@@ -23,8 +23,7 @@ export const ServicesComponent = (props) => {
       <div className="container">
         <div className="section-heading text-center">
           <h2 className="unmatched-services">Unmatched Services</h2>
-          <hr id="services-hr" />
-          <p className="text-muted">
+          <p className="">
             Please see below for our primary services offered. We offer much more than this.
           </p>
         </div>
@@ -35,25 +34,17 @@ export const ServicesComponent = (props) => {
                 <div className="col-lg-6">
                   <div className="feature-item" id="cnc-machining-box" onClick={toggle} onMouseEnter={toggleHoverOne} onMouseLeave={toggleHoverOne}>
                     <h3 className="services-h3">CNC</h3>
-                    {/* <p className="services-info-text" id="services-text-id">
-                    <button 
-                      className={hoveredOne ? '' : 'services-button-hide'}
-                    >
-                        Learn More
-                    </button>
-                    </p> */}
+                    <p className="services-info-text" id="services-text-id">
+                      Learn More
+                    </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item" id="milling-box" onClick={toggle} onMouseEnter={toggleHoverTwo} onMouseLeave={toggleHoverTwo}>
                     <h3 className="services-h3">Milling</h3>
-                    {/* <p className="services-info-text" id="services-text-id">
-                      <button
-                        className={hoveredTwo ? '' : 'services-button-hide'}
-                      >
-                        Learn More
-                    </button>
-                    </p> */}
+                    <p className="services-info-text" id="services-text-id">
+                      Learn More
+                    </p>
                   </div>
                 </div>
               </div>
@@ -61,25 +52,17 @@ export const ServicesComponent = (props) => {
                 <div className="col-lg-6">
                   <div className="feature-item" id="turning-box" onClick={toggle} onMouseEnter={toggleHoverThree} onMouseLeave={toggleHoverThree}>
                     <h3 className="services-h3">Turning</h3>
-                    {/* <p className="services-info-text" id="services-text-id">
-                      <button
-                        className={hoveredThree ? '' : 'services-button-hide'}
-                      >
-                        Learn More
-                    </button>
-                    </p> */}
+                    <p className="services-info-text" id="services-text-id">
+                      Learn More
+                    </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item" id="prototype-box" onClick={toggle} onMouseEnter={toggleHoverFour} onMouseLeave={toggleHoverFour}>
                     <h3 className="services-h3">Prototype</h3>
-                    {/* <p className="services-info-text" id="services-text-id">
-                      <button
-                        className={hoveredFour ? 'services-button-show' : 'services-button-hide'}
-                      >
-                        Learn More
-                    </button>
-                    </p> */}
+                    <p className="services-info-text" id="services-text-id">
+                      Learn More
+                    </p>
                   </div>
                 </div>
               </div>

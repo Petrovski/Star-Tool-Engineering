@@ -1,12 +1,13 @@
 header.masthead {
-  position: relative;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
-  background: url("./img/bg-pattern.png"), white;
-  background: url("./img/bg-pattern.png"), -webkit-linear-gradient(to left, rgb(23, 139, 193), rgb(56, 69, 74));
-  background: url("./img/bg-pattern.png"), linear-gradient(to left, rgb(23, 139, 193), rgb(56, 69, 74)); 
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: url("./img/bg-pattern.png"), white;
+    background: url("./img/bg-pattern.png"), -webkit-linear-gradient(to left, rgb(23, 139, 193), rgb(56, 69, 74));
+    background: url("./img/bg-pattern.png"), linear-gradient(to left, rgb(23, 139, 193), rgb(56, 69, 74));
+    /* height: 100vh;  */
   }
   header.masthead .header-content {
     margin-bottom: 100px;
@@ -59,7 +60,6 @@ header.masthead {
   }
 
   .ste-text {
-    /* text-decoration: underline; */
     font-weight: bold;
   }
 
@@ -112,7 +112,10 @@ header.masthead {
 #ste-learn:hover, #ste-learn:focus, #ste-learn:active {
   color: black;
   font-weight: bold;
-  /* letter-spacing: 4px; */
+}
+
+#ste-learn:hover {
+  cursor: pointer;
 }
 
 #ste-learn:hover:before, #ste-learn:focus:before, #ste-learn:active:before {

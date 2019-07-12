@@ -13,7 +13,7 @@ export const HeroComponent = (props) => {
             <div className="welcome-ste w3-container w3-center w3-animate-bottom welcome-ste">
               <p className="welcome-text">Welcome to <span className="ste-text">Star Tool Engineering</span>. Proudly in business for 20+ years, we strive to provide quality machined parts and on-time delivery.</p>
             </div>
-            <Link to="#about" className="btn btn-outline btn-xl js-scroll-trigger" id="ste-learn" smooth="easeInOutQuart" duration={1000}>Learn more</Link>
+            <a href="#about" className="btn btn-outline btn-xl js-scroll-trigger" id="ste-learn">Learn more</a>
           </div>
         </div>
       </div>
