@@ -2,7 +2,7 @@ import React from 'react';
 import ClientsCarousel from './ClientsCarousel';
 import './style.css';
 
- export const AppDownloadComponent = (props) => {
+ export const AboutUsComponent = (props) => {
   return (
     <section className="download text-center " id="about">
       <div className="container">

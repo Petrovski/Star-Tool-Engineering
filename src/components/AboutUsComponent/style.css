@@ -40,30 +40,23 @@
       } 
     }
 
-  /* slider */
 
-  .slick-dots {
-    text-align: center;
-    padding-left: 0;
-  }
+/* Carousel */
 
-  .slick-dots li {
-    display: inline-block;
-    margin: 2px;
-  }
+div.carousel.carousel-slider {
+  margin-top: 100px;
+}
 
-  .slick-dots li.slick-active button {
-    background: #fff;
-    width: 25px;
-  }
+.slide img {
+  height: 200px;
+  width: 150px;
+}
 
-  .slick-dots li button {
-    height: 6px;
-    width: 12px;
-    background: rgba(255, 255, 255, 0.5);
-    color: transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .2s ease;
-    border: 0;
-  }
+.carousel .slide {
+  background: transparent;
+}
+
+.carousel .control-dots {
+  position: relative;
+  margin: 40px 0px 0px 0px;
+}

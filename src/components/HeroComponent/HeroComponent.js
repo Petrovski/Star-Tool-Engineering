@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+// import { Link, animateScroll as scroll } from "react-scroll";
 import './style.css';
-import '../../device-mockups/device-mockups.css';
 
 export const HeroComponent = (props) => {
   return <header className="masthead">

@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import './App.css';
-import 'font-awesome/css/font-awesome.css';
+// import 'font-awesome/css/font-awesome.css';
 
 import {FooterComponent}  from './components/FooterComponent/FooterComponent';
 import {SocialComponent} from './components/SocialComponent/SocialComponent';
 import {CallToActionComponent} from './components/CallToActionComponent/CallToActionComponent';
 import {ServicesComponent} from './components/ServicesComponent/ServicesComponent';
-import {AppDownloadComponent} from './components/AppDownloadComponent/AppDownloadComponent';
+import {AboutUsComponent} from './components/AboutUsComponent/AboutUsComponent';
 import {HeroComponent} from './components/HeroComponent/HeroComponent';
 import NavBarComponent from './components/NavBarComponent/NavBarComponent';
 
@@ -43,7 +43,7 @@ class App extends Component {
       <div>
         <NavBarComponent navBarShrink = {nbs} />
         <HeroComponent />
-        <AppDownloadComponent />
+        <AboutUsComponent />
         <ServicesComponent />
         <CallToActionComponent />
         <SocialComponent />
